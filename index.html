@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- 必要なライブラリをネット上から直接参照 CDN -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css"/>
-    <!-- 自分のcss -->
+
+    
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- 自分のjs -->
-    <script src="./js/script02.js"></script>
-    <title>hato8_10</title>
+   
+    <script src="./js/script.js"></script>
+    <title>毎日の食事</title>
   </head>
-  <body class="one">
+
+  <body>
     <div class="wrapper">
-      
       <header>
-        <h1>Flow of the day</h1>
+        <h1>毎日の食事</h1>
+        <nav id='nav'>
+          <ul id="menu">　
+            <li class="menu"><a href="">朝食</a></li>
+            <li><a>昼食</a></li>
+            <li><a href="">夕食</a></li>
+          </ul>
+        </nav>
         <div id="wave"></div>
         <div id="line"></div>
       </header>
 
-      <div id="back">
-        <div id="backimg01" class="backimg"><img src="./images/hinode2.jpg" alt=""></div>
-        <div id="backimg02" class="backimg"><img src="./images/1bb01480f96c2f05d3f4a88ee062a190_t.jpeg" alt=""></div>
-        <div id="backimg03" class="backimg"><img src="./images/20210407_yakei_012.jpg" alt=""></div>
+      <div class="each_work">
+        <div id="img01" class="img_button"><img src="./images/shutterstock_1189668022.jpg"></div>
+        <div id="content01" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="./images/mark_chuui_illust_904.png" alt="ダミー">
+            </div>
+            <div class="txt">
+              <h2>朝食で食べるべきもの</h2>
+              <div>
+                <p>炭水化物・・タンパク質・ビタミン/ミネラル類</p>
+                <p>
+                  <br>朝食は1日を活動的に過ごすための大事なスイッチです。<br>脳のエネルギー源のブドウ糖をしっかりと摂取して<br>脳と体をしっかりと目覚めさせましょう！！
+                <br>時間がないときには<br>牛乳✖️バナナ、、パン✖️牛乳/ヨーグルト/チーズなどがおすすめです！！
+                </p>
+                <p><img src="./images/publicdomainq-0043574hmt.jpg"></p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button">閉じる</div>
+        </div>
+      </div>
+      
+      <div class="each_work">
+        <div id="img02" class="img_button"><img src="./images/shutterstock_424416982.jpg.webp"></div>
+        <div id="content02" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="./images/mark_chuui_illust_904.png" alt="ダミー">
+            </div>
+            <div class="txt">
+              <h2>昼食で食べるべきもの</h2>
+              <div>
+                <p>昼食後に睡魔が襲ってくるのはランチで何を食べたのかが大きく影響しています</p>
+                <p>昼食の場合は空腹時に生の果物や野菜を摂取することが望ましいです。<br>その後に少量のタンパク質と炭水化物を摂取することで眠くなりづらくなります。</p>
+                <p>炭水化物と動物性タンパク質を一緒に食べると<br>互いの消化作業が邪魔されるため長い間胃に留まることになってしまいます。</p>
+                <p>これが食後の睡眠や胸焼けの原因となっています</p>
+                <p><img src="./images/publicdomainq-0002874.jpg"></p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button">閉じる</div>
+        </div>
       </div>
 
-      <ul id="menu">
-        <li id="btn01">Morning</li>
-        <li id="btn02">Afternoon</li>
-        <li id="btn03">Night</li>
-      </ul>
-
-      <div id="content">
-        <div class="sa sa--up"><img src="./images/original-2.jpg"></div>
-        <div class="sa sa--up"><img src="./images/shutterstock_1189668022.jpg"></div>
-        <div class="sa sa--up"><img src="./images/publicdomainq-0010019ofm.jpg"></div>
-        <div class="sa sa--up"><img src="./images/bus_1563741465.jpg"></div>
-        <div class="sa sa--up"><img src="./images/6d7500ccf65e4e74094e28935f5b02b4_t.jpeg"></div>
-        <div class="sa sa--up"><img src="./images/shutterstock_424416982.jpg.webp"></div>
-        <div class="sa sa--up"><img src="./images/20191009164116.jpg"></div>
-        <div class="sa sa--up"><img src="./images/pixta_47940357_M-860x572.jpg"></div>
-        <div class="sa sa--up"><img src="./images/556d8ba0040d13319da31782cd292db5.jpg"></div>
-        <div class="sa sa--up"><img src="./images/4aca30e748c540f5c7958a2e9f00b4cb.jpg"></div>
-        <div class="sa sa--up"><img src="./images/20200505171254lYw0big.jpg"></div>
-        <div class="sa sa--up"><img src="./images/mf_c200.jpg"></div>
+      <div class="each_work">
+        <div id="img03" class="img_button"><img src="./images/556d8ba0040d13319da31782cd292db5.jpg"></div>
+        <div id="content03" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="./images/mark_chuui_illust_904.png" alt="ダミー">
+            </div>
+            <div class="txt">
+              <h2>夕食で食べるべきもの</h2>
+              <div>
+                <p>夜は食べたものが十分に消化される時間も<br>少ないまま就寝することになるので太りやすくなります。</p>
+                <p>夕食では炭水化物を抜いてしまっても偏食になることはありません。<br>可能ならば野菜とおかずだけでも問題ありません。</p>
+                <p>よくバランスよく食べるようにと言う言葉を聞きますが<br>1日のトータルバランスで考えることが重要なこととなります。</p>
+                <p><img src="./images/a0736dc639e1dc881e93550e11b95779_t-2.jpeg"></p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button">閉じる</div>
+        </div>
       </div>
 
-      
-      
-      
     </div>
   </body>
 </html>
